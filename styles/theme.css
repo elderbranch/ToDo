@@ -1,0 +1,52 @@
+:root{
+  --panel-bg-color: #D5CCFF;  
+  --container-bg-color: white;
+  --text-color: #000;
+  --text-color: #2B1887;
+}
+:root[theme='dark'] {
+  --panel-bg-color: #5744B5;
+  --container-bg-color: #252525;
+  --text-color: white;
+  --text-color: white;
+}
+
+body{
+  background-color: var(--container-bg-color);
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+.container,
+.container2 {
+
+  background-color: var(--panel-bg-color);
+}
+
+.task_title{
+  color: var(--text-color);
+}
+
+footer{
+  padding: 1rem;
+  background: var(--panel-bg-color);
+}
+input[type=button] {
+  color: var(--text-color);
+  background: var(--panel-bg-color);
+
+  padding: 0.3rem;
+  margin: 0.2rem;
+  font-size: 1rem;
+}
+
+.modal {
+  background-color: var(--container-bg-color);
+  color: var(--text-color);
+}
+.modal input, select{
+  background-color: var(--container-bg-color);
+  color: var(--text-color);
+}

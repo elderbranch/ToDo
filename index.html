@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/theme.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+    <button class="addTaskBtn" id="modalButton"></button>
+    <button class="change__theme" id="toggle-theme"></button>
+    <div class="overlay" id="overlay"></div>
+      <div class="modal none" id="modal">
+        <h2>НОВАЯ ЗАДАЧА</h2>
+        <form action="" onsubmit="return false">
+          <label for="task-name">Название задачи
+          </label>
+          <input type="text" id="task-name" placeholder="Введите название">
+          <label for="">Уровень сложности
+          </label>
+          <select name="todo__difficulty" id="todo__difficulty">
+            <option value="Легко">Легко</option>
+            <option value="Нормально">Нормально</option>
+            <option value="Сложно">Сложно</option>
+          </select>
+          <div class="modal_btn-cont">
+            <button id="close-modal">Отмена</button>
+            <button class="add-task" id="addTask">Добавить</button>
+          </div>
+        </form>
+      </div>
+    <header class="header">
+      <h1>TODO LIST</h1>
+    </header>
+    <div class="content">
+      <div class="container">
+        <div class="task_title">Нужно сделать</div>
+        <ul id="list" class="task_list" >
+        </ul>
+      </div>
+      <div class="container container2">
+        <div class="task_title title2">Завершенные задачи</div>
+        <ul id="list2" class="task_list">
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="index.js"></script>
+<script src="theme.js"></script>
+
+</html>
